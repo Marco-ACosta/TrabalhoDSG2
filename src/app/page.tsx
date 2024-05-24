@@ -62,6 +62,19 @@ export default function Home() {
             console.error("Error signing out: ", error);
         });
     };
+    const clearUser = (metaId: string) => {
+        const metaRef = ref(db, `/metas/${metaId}`);
+        remove(metaRef).then(() => {
+            console.log(`Meta ${metaId} removida`);
+            setMetas((prevMetas) => {
+                const newMetas = { ...prevMetas };
+                delete newMetas[metaId];
+                return newMetas;
+            });
+        }).catch((error) => {
+            console.error("Erro ao remover meta: ", error);
+        });
+    };
 
     return (
 
