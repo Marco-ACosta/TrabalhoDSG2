@@ -82,7 +82,7 @@ export default function Home() {
         push(ref(db, "/metas"), newMetas)
             .then(() => {
                 setNewMetas({
-                    id_usuario: authUser?.uid || "",
+                    id_usuario: "",
                     titulo: "",
                     tipo: "",
                     data_conclusao: "",
