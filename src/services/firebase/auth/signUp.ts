@@ -1,4 +1,4 @@
-// firebase/auth/registrar.ts
+
 import { firebase_app } from "../firebaseConfiguration";
 import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 

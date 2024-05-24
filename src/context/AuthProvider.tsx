@@ -3,13 +3,13 @@
 import React, { ReactNode, useEffect, useState } from "react";
 import { onAuthStateChanged, getAuth, User, signOut } from "firebase/auth";
 import { AuthContext } from "./AuthContext";
-import { app } from "@/services/firebase/firebaseConfiguration"
+import { firebase_app } from "@/services/firebase/firebaseConfiguration"
 
 interface AuthContextProviderProps {
     children: ReactNode;
 }
 
-const auth = getAuth(app);
+const auth = getAuth(firebase_app);
 
 export const AuthContextProvider: React.FC<AuthContextProviderProps> = ({
                                                                             children,
