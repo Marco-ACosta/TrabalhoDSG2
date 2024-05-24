@@ -15,10 +15,10 @@ const firebaseConfig = {
 };
 
 
-let firebase_app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
-const db = getDatabase(firebase_app);
-const firestore = getFirestore(firebase_app);
-const auth = getAuth(firebase_app);
+let app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
+const db = getDatabase(app);
+const firestore = getFirestore(app);
+const auth = getAuth(app);
 
 
-export { db, firestore, auth, firebase_app };
+export { db, firestore, auth, app };
