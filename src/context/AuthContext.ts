@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext } from "react";
-import { User } from "../services/firebase/";
+import { User} from "firebase/auth";
 
 interface AuthContextType {
     userAuth: User | null;
