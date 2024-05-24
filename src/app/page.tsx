@@ -17,6 +17,7 @@ interface IMetas {
         descricao: string;
         status: string;
         titulo: string;
+        id_usuario: string;
     };
 }
 
