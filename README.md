@@ -1,6 +1,6 @@
-trabalho-dsg-2.vercel.app
+link vercel :    trabalho-dsg-2.vercel.app
 
 
-login:
+Para entrar no site
 email: lorenzo@gmail.com
 senha: lazaro
