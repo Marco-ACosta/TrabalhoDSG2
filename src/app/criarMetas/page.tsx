@@ -35,7 +35,6 @@ export default function Home() {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
-                setAuthUser(user);
                 setNewMetas((prevMetas) => ({
                     ...prevMetas,
                     id_usuario: user.uid,
