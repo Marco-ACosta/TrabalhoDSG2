@@ -1,6 +1,6 @@
 ## Requisitos:
 
-- [x] Crie um projeto do zero em Next com TypeScript;
+- [ ] Crie um projeto do zero em Next com TypeScript;
 - [x] Crie um projeto no Firebase;
 - [x] Crie uma autenticação no projeto;
 - [x] Crie uma tabela no Firebase para que os usuários possam definir e acompanhar suas metas pessoais ou profissionais;
@@ -23,3 +23,4 @@
 - [ ] Tratamento de erros.
 
 ## Pontos A Melhorar
+- Ao fazer o cadastro o usuário é redirecionado para /signin e não para o /login
